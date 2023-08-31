@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/935bdd7c2c.js" crossorigin="anonymous"></script>
+  <script src='https://cdn.plot.ly/plotly-2.9.0.min.js'></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+  <script src="https://unpkg.com/chartjs-gauge@0.3.0/dist/chartjs-gauge.js"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://unpkg.com/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+  <script src="https://unpkg.com/chartjs-gauge@0.3.0/dist/chartjs-gauge.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gauge.js/1.3.7/gauge.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://pbs.twimg.com/profile_images/587131394096107520/4RFYgoKG_400x400.png">
+
+  <title>Direct Hires Dashboard</title>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col">
+          <div class="card text-dark bg-white mb-3 shadow border-0">
+
+            <div class="card-body text-center">
+              <h4 class="card-title">HR Organization</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col">
+          <div class="card text-dark bg-light mb-3 shadow border-0">
+            <div class="card-header bg-white text-success ">
+              <h3><i class="bi bi-globe fa-2x"></i>&nbsp;&nbsp;&nbsp;Saudi</h3>
+              <p class="text-muted">Hires &nbsp;&nbsp;&nbsp; Target &nbsp;| &nbsp; 914 </p>
+            </div>
+            <div class="card-body bg-white">
+              <h5 class="card-title"> ---</h5>
+              <div class="progress" style="height: 25px;">
+                <div class="progress-bar  bg-success" role="progressbar" style="width: 47%" aria-valuenow="47"
+                  aria-valuemin="0" aria-valuemax="100">47%</div>
+              </div>
+              <p class="text-center"><b>296</b> out of <b>670</b> completed </p>
+              <div class="row">
+                <div class="col-6"> <canvas id="chartFreshGraduates"></canvas><br>
+                  <h3 class="text-center text-success">67%</h3>
+                </div>
+                <div class="col-6"> <canvas id="chartjobqualified"></canvas><br>
+                  <h3 class="text-center text-success">18%</h3>
+                </div>
+              </div>
+
+              <br><br><br><br>
+
+              <div class="d-flex justify-content-center">
+                <div class="horizontal"><i class="fa-solid fa-person-dress fa-7x  "
+                    style='color: #40861a'>&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                  <i class="fa-solid fa-wheelchair fa-7x" style='color: #40861a'></i>
+                </div>
+              </div>
+
+              <br><br>
+              <br><br>
+
+              <div class="row">
+                <div class="col-6">
+                  <canvas id="foo"></canvas>
+                </div>
+                <div class="col-6">
+                  <canvas id="foo2"></canvas>
+                </div>
+              </div>
+              <br>
+              <div class="row ">
+                <div class="col-6">
+                  <p class="text-center fst-italic">Quality</p>
+                </div>
+                <div class="col-6">
+                  <p class="text-center fst-italic">Time</p>
+                </div>
+
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-dark bg-light mb-3 shadow border-0">
+            <div class="card-header bg-white ">
+              <h3 style="color:#FFA500"> <i class="fa-solid fa-book-open fa-2x"></i>&nbsp;&nbsp;&nbsp;SMP</h3>
+              <p class="text-muted">Hires &nbsp;&nbsp;&nbsp; Target &nbsp;| &nbsp; 1,058 </p>
+            </div>
+            <div class="card-body bg-white">
+              <h5 class="card-title">---</h5>
+              <p class="card-text">
+
+              <div class="progress" style="height: 25px;">
+                <div class="progress-bar bg-warning " role="progressbar" style="width: 82%" aria-valuenow="82"
+                  aria-valuemin="0" aria-valuemax="100">82%</div>
+              </div>
+              <p class="text-center"><b>822</b> out of<b>891</b>completed</p>
+              <div class="row">
+                <div class="col-6"> <canvas id="chartsaudi"></canvas><br>
+                  <h3 class="text-center " style="color:#FFA500">67%</h3>
+                </div>
+                <div class="col-6"> <canvas id="chartexpat"></canvas><br>
+                  <h3 class="text-center " style="color:#FFA500">18%</h3>
+                </div>
+              </div>
+              <br> <br> <br> <br>
+              <div class="d-flex justify-content-center">
+                <div class="horizontal1"><i class="fa-solid fa-person-dress fa-7x "
+                    style='color: #FFA500'>&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                  <i class="fa-solid fa-wheelchair fa-7x" style='color: #FFA500'></i>
+                </div>
+              </div>
+              <br><br>
+              <br><br>
+
+              <div class="row">
+                <div class="col-6">
+                  <canvas id="foo3"></canvas>
+                </div>
+                <div class="col-6">
+                  <canvas id="foo4"></canvas>
+                </div>
+              </div>
+              <br>
+              <div class="row ">
+                <div class="col-6">
+                  <p class="text-center fst-italic">Quality</p>
+                </div>
+                <div class="col-6">
+                  <p class="text-center fst-italic">Time</p>
+                </div>
+
+              </div>
+
+
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-dark bg-light mb-3 shadow border-0">
+            <div class="card-header bg-white text-primary">
+              <h3> <i class="fa-solid fa-fax fa-2x"></i>&nbsp;&nbsp;&nbsp;EXPAT </h3>
+              <p class="text-muted">Hires &nbsp;&nbsp;&nbsp; Target &nbsp;| &nbsp; 720 </p>
+            </div>
+            <div class="card-body bg-white">
+              <h5 class="card-title">---</h5>
+              <p class="card-text">
+              <div class="progress" style="height: 25px;">
+                <div class="progress-bar " role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0"
+                  aria-valuemax="100">33%</div>
+              </div>
+              <p class="text-center"><b>230</b> out of <b>349</b> completed </p>
+
+              <div class="row">
+                <div class="col-6 col-lg-4"><canvas id="chartus"></canvas><br>
+                  <h3 class="text-center text-primary">67%</h3>
+                </div>
+                <div class="col-6 col-lg-4"><canvas id="chartglobal"></canvas><br>
+                  <h3 class="text-center text-primary">18%</h3>
+                </div>
+                <div class="col-4 col-lg-4"><canvas id="chartaoa"></canvas><br>
+                  <h3 class="text-center text-primary">18%</h3>
+                </div>
+
+              </div>
+              <br><br><br><br>
+              <div class="d-flex justify-content-center ">
+                <div class="horizontal2"><i class="fa-solid fa-person fa-7x"
+                    style='color: #1C66C7'>&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                  <i class="fa-solid fa-person-dress fa-7x " style='color: #1C66C7'></i>
+                </div>
+
+
+              </div>
+
+              <br><br><br><br>
+
+              <div class="row">
+                <div class="col-6">
+                  <canvas id="foo5"></canvas>
+                </div>
+                <div class="col-6">
+                  <canvas id="foo6"></canvas>
+                </div>
+              </div>
+              <br>
+              <div class="row ">
+                <div class="col-8">
+                  <p class="text-center fst-italic">Quality</p>
+                </div>
+                <div class="col-2">
+                  <p class="text-center fst-italic">Time</p>
+                </div>
+
+              </div>
+
+
+
+
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-3">
+      <div class="row pt-3">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="card text-dark bg-light mb-3 shadow">
+            <div class="card-header card-header bg-white ">
+              <h6 class="text-success"> <i class="fa-solid fa-bookmark fa-2x"
+                  style='color:#6add2c'></i>&nbsp;&nbsp;&nbsp;&nbsp;Saudi Recruitment | Activities Brief</h6>
+            </div>
+            <div class="card-body bg-white">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">
+
+              <div class="row">
+                <div class="col">
+                  <i class="bi bi-bullseye fa-2x">&nbsp;&nbsp; 914 &nbsp; Target</i>
+                </div>
+                <div class="col">
+                  <i class="fa-solid fa-briefcase fa-1x">&nbsp;&nbsp; 767</i><br><br>
+                  <i class="fa-solid fa-briefcase fa-1x">&nbsp;&nbsp;221</i><br><br>
+                  <i class="fa-solid fa-users fa-1x">&nbsp;&nbsp;500</i><br><br>
+                  <i class="fa-solid fa-users fa-1x">&nbsp;&nbsp;45</i> <br><br>
+                  <i class="fa-solid fa-people-arrows-left-right fa-1x">&nbsp;&nbsp;45</i> <br><br>
+                  <i class="fa-solid fa-crosshairs fa-1x">&nbsp;&nbsp;336</i><br><br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <i class="fa-solid fa-person-walking fa-2x"></i>&nbsp;<i
+                    class="fa-solid fa-arrow-right-long fa-2x"></i>&nbsp;<i class="fa-solid fa-building fa-2x"
+                    style='color:#6add2c'>&nbsp;&nbsp; 213</i>
+                </div>
+                <div class="col">
+                  <i class="fa-solid fa-newspaper fa-1x">&nbsp;&nbsp;17</i> <br><br>
+                  <i class="fa-solid fa-pen-to-square fa-1x">&nbsp;&nbsp;14</i><br><br>
+                  <i class="fa-solid fa-envelope-open fa-1x">&nbsp;&nbsp;9</i><br><br>
+                  <i class="fa-solid fa-user-tie fa-1x">&nbsp;&nbsp;24</i><br><br>
+                  <i class="fa-solid fa-truck fa-1x">&nbsp;&nbsp;124</i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <i class="fa-solid fa-handshake fa-2x" style='color:#6add2c'>&nbsp;&nbsp; 457 </i>
+                  <br><br>
+                  <i class="fa-solid fa-scale-balanced fa-2x" style='color:#f17909'>&nbsp;&nbsp; 543</i>
+                </div>
+              </div>
+
+              </p>
+            </div>
+            <div class="card-footer">
+
+              <div class="row">
+                <div class="col-4">
+                  <p class="fs-6">Your opganization Time </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 12 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 12 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 64 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 14 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 12 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 124 </p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-4">
+                  <p>(In Days)</p>
+                </div>
+                <div class="col"><i class="fa-solid fa-crosshairs fa-2x"></i> </div>
+                <div class="col"><i class="fa-solid fa-newspaper fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-pen-to-square fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-envelope-open fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-user-tie fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-truck fa-2x"></i></div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <p class="fs-6">company Average Time </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 14 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 11</p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 34 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 14 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 14 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 90 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="card text-dark bg-light mb-3 shadow">
+            <div class="card-header card-header bg-white ">
+              <h6 class="text-primary"> <i class="fa-solid fa-bookmark fa-2x"
+                  style='color:#1c66c7'></i>&nbsp;&nbsp;&nbsp;&nbsp;Expat Recruitment | Activities Brief </h6>
+            </div>
+            <div class="card-body bg-white">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">
+
+              <div class="row">
+                <div class="col">
+                  <i class="bi bi-bullseye fa-2x">&nbsp;&nbsp; 720 &nbsp; Target</i>
+                </div>
+
+                <div class="col "><i class="fa-solid fa-briefcase fa-1x">&nbsp;&nbsp; 700</i><br><br>
+                  <i class="fa-solid fa-briefcase fa-1x">&nbsp;&nbsp;20</i><br><br>
+                  <i class="fa-solid fa-users fa-1x">&nbsp;&nbsp;500</i><br><br>
+                  <i class="fa-solid fa-users fa-1x">&nbsp;&nbsp;45</i> <br><br>
+                  <i class="fa-solid fa-people-arrows-left-right fa-1x">&nbsp;&nbsp;336</i><br><br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <br> <i class="fa-solid fa-person-walking fa-2x"></i>&nbsp;&nbsp;<i
+                    class="fa-solid fa-arrow-right-long fa-2x"></i>&nbsp;<i class="fa-solid fa-building fa-2x"
+                    style='color:#1c66c7'>&nbsp;&nbsp; 119</i>
+                </div>
+                <div class="col">
+                  <i class="fa-solid fa-crosshairs fa-1x">&nbsp;&nbsp;33</i><br><br>
+                  <i class="fa-solid fa-newspaper fa-1x">&nbsp;&nbsp;17</i> <br><br>
+                  <i class="fa-solid fa-pen-to-square fa-1x">&nbsp;&nbsp;14</i><br><br>
+                  <i class="fa-solid fa-envelope-open fa-1x">&nbsp;&nbsp;9</i><br><br>
+                  <i class="fa-solid fa-user-tie fa-1x">&nbsp;&nbsp;24</i><br><br>
+                  <i class="fa-solid fa-truck fa-1x">&nbsp;&nbsp;104</i>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col">
+                  <i class="fa-solid fa-handshake fa-2x" style='color:#1c66c7'>&nbsp;&nbsp; 230</i> <br><br>
+                  <i class="fa-solid fa-scale-balanced fa-2x" style='color:#f17909'>&nbsp;&nbsp; 343</i>
+                </div>
+
+
+
+
+
+              </div>
+
+              </p>
+
+            </div>
+            <div class="card-footer">
+              <div class="row ">
+                <div class="col-4">
+                  <p class="fs-6">Your opganization Time </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 12 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 12 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 64 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 14 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 12 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 124 </p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-4">
+                  <p>(In Days)</p>
+                </div>
+                <div class="col"><i class="fa-solid fa-crosshairs fa-2x"></i> </div>
+                <div class="col"><i class="fa-solid fa-newspaper fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-pen-to-square fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-envelope-open fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-user-tie fa-2x"></i></div>
+                <div class="col"><i class="fa-solid fa-truck fa-2x"></i></div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <p class="fs-6">company Average Time </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 14 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 11</p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 34 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 14 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 14 </p>
+                </div>
+                <div class="col">
+                  <p class="fs-6"> 90 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+  </div>
+
+  <script src="charts.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+
+</body>
+
+</html>

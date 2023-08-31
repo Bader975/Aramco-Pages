@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="icon" href="https://pbs.twimg.com/profile_images/587131394096107520/4RFYgoKG_400x400.png">
+  <title>My Aramco Page 1</title>
+
+  <style>
+    body {
+      background-image: url('https://cnbc-production-images-bucket.s3.me-south-1.amazonaws.com/content/images/4d8b0c91e8.jpg');
+      /* Full height */
+      height: 100%;
+      background-position: center;
+      background-repeat: repeat-y;
+      background-size: cover;
+    }
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      margin: 0;
+  
+    }
+
+
+
+
+    .nav-link {
+      color: rgb(255, 255, 255);
+
+    }
+
+    .tab-pane {
+      color: rgb(255, 255, 255);
+
+    }
+
+
+    .home-text {
+      font-size: 22px;
+      font-family: "Arial, Helvetica", sans-serif;
+      text-align: left;
+      background-color: rgb(0, 0, 0, 0.5);
+      border-radius: 20px;
+    }
+
+    .card,
+    .list-group {
+      text-align: center;
+      background-color: transparent;
+      color: white;
+      font-size: 20px;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #nav-services {
+      background-color: transparent;
+      background: linear-gradient(rgba(48, 48, 48, 0.7), rgba(121, 115, 115, 0.7));
+
+
+    }
+
+
+
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* The navbar container */
+    .topnav {
+      background-color: rgb(112, 108, 108);
+    }
+
+
+
+
+
+    /* Links - change color on hover */
+    .topnav a:hover {
+      background-color: wheat;
+      color: black;
+    }
+
+    /* Create three unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 5px;
+    }
+
+    /* Left and right column */
+    .column.side {
+      width: 50%;
+      height: 100px;
+      background-color: rgb(60, 170, 69);
+      display: block;
+      color: rgb(255, 255, 255);
+      padding: 20px 20px;
+
+      text-align: center;
+    }
+
+    /* Middle column */
+    .column.middle {
+      width: 10%;
+      list-style-type: circle;
+      background-color: rgba(52, 38, 243, 0.726)
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container overflow-x-hidden">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <a class="navbar-brand" href="#">My home </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"></button>
+      <br>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+          role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+        <button class="nav-link" id="nav-know-tab" data-bs-toggle="tab" data-bs-target="#nav-know" type="button"
+          role="tab" aria-controls="nav-know" aria-selected="false">Knowledge Resources </button>
+        <button class="nav-link" id="nav-services-tab" data-bs-toggle="tab" data-bs-target="#nav-services" type="button"
+          role="tab" aria-controls="nav-services" aria-selected="false">Services</button>
+        <button class="nav-link" id="nav-info-tab" data-bs-toggle="tab" data-bs-target="#nav-info" type="button"
+          role="tab" aria-controls="nav-info" aria-selected="false"> My information</button>
+        <button class="nav-link" id="nav-work-tab" data-bs-toggle="tab" data-bs-target="#nav-work" type="button"
+          role="tab" aria-controls="nav-work" aria-selected="false">My Work</button>
+
+        <form class=" d-flex accordion-button" style="background-color: rgb(176, 194, 214);">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+
+      </div>
+
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+        <div class="row">
+          <p class="col-12 col-md-6 home-text">
+            We believe in the power of energy to transform lives, enhance communities, advance human
+            progress, and sustain our planet.
+            With global population forecast to increase by two billion over the next 25 years, even more
+            energy will be required to meet rising demand. It will take all available sources of energy
+            to
+            fill this need — both legacy and alternative sources. And while alternative energy sources
+            are
+            steadily making advances, they will not be capable of meeting future demand alone. Even as
+            we
+            transition to a low emissions future, hydrocarbon-based energy sources will be counted on to
+            meet the bulk of the world’s energy demand well into the future. </p>
+          <!-- <img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/NYGL2CS72BOPXI7HNMD7DSTPFM.jpg"
+            class="col-12 col-md-6" alt="..."> -->
+
+        </div>
+
+
+
+
+
+      </div>
+      <div class="tab-pane fade" id="nav-know" role="tabpanel" aria-labelledby="nav-know-tab">
+        <div class="container overflow-hidden">
+          <div class="row gx-6">
+            <div class="col">
+              <div class="p-3 border bg-light"
+                style="background-image: url('https://pbs.twimg.com/profile_images/587131394096107520/4RFYgoKG_400x400.png')">
+                <p><a href="https://www.aramco.com/" class="text-white">Aramco Wesite</a></p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light"
+                style="background-image: url('https://blog.templatetoaster.com/wp-content/uploads/2020/05/Bootstrap-5.jpg')">
+                <p><a href="https://getbootstrap.com/" class="text-white">Bootstrap</a></p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-dark"
+                style="background-image: url('https://assets.unenvironment.org/s3fs-public/2017-11/Forest_trees.jpg?VersionId=null')">
+                <p><a href="https://www.w3schools.com/" class="text-white">W3C School</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tab-pane fade" id="nav-services" role="tabpanel" aria-labelledby="nav-services-tab">
+        <section class="vh-130 ">
+          <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col col-xl-10">
+                <div class="img-thumbnail" style="border-radius:5rem;">
+                  <div class="row g-5">
+                    <div class="col-md-10 col-lg-5 d-5 d-md-block">
+                      <img
+                        src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeslk9dJUlXakZ5-EtrbFFled2FEo4-V-4SZVVZkBHTk_HPD8vKE8CwXKEAoxi831BR14&usqp=CAU"
+                        alt="login form" class="img" style="border-radius: 5rem 0 0 5rem;" />
+                    </div>
+                    <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                      <div class="card-body p-4 p-lg-5 text-black">
+
+                        <form>
+
+                          <div class="d-flex align-items-center mb-3 pb-1">
+                            <i class="fas fa-cubes fa-2x me-6" style="color: #ffffff;"></i>
+                            <span class="h1 fw-bold mb-0" style="color: #62c4e2;">verification Needed!</span>
+                          </div>
+
+                          <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+
+                          <div class="form-outline mb-4">
+                            <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                            <label class="form-label" for="form2Example17">Email address</label>
+                          </div>
+
+                          <div class="form-outline mb-4">
+                            <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                            <label class="form-label" for="form2Example27">Password</label>
+                          </div>
+
+                          <div class="pt-1 mb-4">
+                            <button class="btn btn-light btn-lg btn-block" type="button">Login</button>
+                          </div>
+
+                          <a class="small text-muted" href="#!">Forgot password?</a>
+                          <p class="mb-5 pb-lg-2" style="color: #3d3c3c;">Don't have an account? <a href="#!"
+                              style="color: #2c73dd;">Register here</a></p>
+                          <a href="#!" class="small text-muted">Terms of use.</a>
+                          <a href="#!" class="small text-muted">Privacy policy</a>
+                        </form>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+
+        <div style="background-color: #3d3c3c;">
+          <span class="border border-dark">
+            <p>Hey, My name is Bader Alyami. I am working in <b>the Aramco HR Department, HR-System solution</b>, my
+              major
+              is Computer Science at
+              Najran University in the Department of Computer Science, and I am working hard to improve my skills in
+              various computer science fields. </p>
+          </span>
+        </div>
+
+
+        <div class="container" style="background-color:#5d8d96">
+
+
+          <p>Education:</p>
+          <ul type="circle ">
+            <li>HTML</li>
+            <li>Python</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>java</li>
+            <li>MySQL</li>
+          </ul>
+          <br>
+
+          <p>Experience:</p>
+          <ul>
+            <li>java</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>C</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab">
+
+        <div class="d-flex">
+          <img src="https://khamsat.hsoubcdn.com/images/services/945462/31c6d847a868e1dbb98c0bdb7a8dbedb.jpg"
+            class=" accordion-body" alt="My work tools" width="40%">
+          <div>
+            <h3 class="display-6" style="color:#daebf5"><b>This Page made by HTML & BOOTSTRAB & CSS</b></h3>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="card mt-5 rounded-2">
+      <div class="card-body">
+        <h5 class="card-title">Connect with us</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Our Numbers</h6>
+        <p class="card-text">So this just test page using <b>Bootstrap</b><br> Hope You like it ! <svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile"
+            viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path
+              d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+          </svg></p>
+
+        <a href="#" class="card-link">013xxxxxxxxx</a><br>
+        <a href="#" class="card-link">Bader Alyami</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
